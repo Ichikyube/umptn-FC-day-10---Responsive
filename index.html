@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="node_modules/flowbite/dist/flowbite.js"></script>
+</head>
+
+<body>
+    <header class="from-mygradWhite to-mygradGrey bg-gradient-to-br">
+        <nav id="navbar-default" class="sticky top-0 ">
+            <div class="container top-3 left-64 mx-auto w-full flex items-center justify-between pt-7 pb-4 px-0">
+                <div class="logo flex items-center">
+                    <img src="img/Logo.svg" alt="" />
+                    <h1 class="text-myGrayishBlue font-poppins ml-1.5 text-2xl font-semibold not-italic leading-6">
+                        Netbook
+                    </h1>
+                </div>
+                <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex absolute z-50 right-0 p-2 mr-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden lg:flex fixed lg:static from-mygradWhite to-mygradGrey lg:bg-none bg-gradient-to-bl lg:bg-transparent top-11 lg:ml-[72px] w-full justify-between" id="navbar-dropdown">
+                    <div class="bg-fixed w-full top-0 mx-auto flex items-center justify-between px-0">
+                        <ul class="font-inter flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 gap-8">
+                            <li><a class="font-bold" href="">Home</a></li>
+                            <li class="after:ml-1 after:text-base lg:after:text-xs after:text-blue-500 after:content-['\2039'] focus:after:content-['\203A']  lg:after:content-['\2228']"><a
+                                    href="">Community</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-action flex flex-col lg:flex-row justify-center items-center">
+                        <label class="relative block">
+                            <span class="sr-only">Search</span>
+                            <span class="absolute inset-y-0 left-0 flex items-center">
+                              <img src="img/MagnifyingGlass.svg" alt="">
+                            </span>
+                            <input class="lg:w-[105px] w-full lg:focus:w-fit transition-all duration-700 placeholder:text-inter-400 lg:text-xs block bg-transparent border-separate border-t-0 border-x-0 border-b-2 border-myPaleOrange py-2 pl-4 items-center overflow-x-visible focus:outline-none focus:border-t-0 focus:border-x-0 focus:border-b-2 focus:ring-sky-500 focus:ring-0 sm:text-sm" placeholder="Search Here..." type="text" name="search"/>
+                        </label>
+                        <button class="rounded-xl lg:ml-[42px] w-1/2 justify-center bg-blue-500 text-myWhite text-xs my-5 flex min-w-fit px-11 py-4">Log In</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+
+        <section id="hero">
+            <div
+                class="md:block mt-14 flex font-inter font-italic font-xl container mx-auto gap-5 lg:grid lg:grid-cols-2 items-center text-2xl font-semibold leading-6 mb-[124px]">
+                <div class="font-myBlue float-left mt-12 flex-col text-left">
+                    <div class="bg-myBlue/[.1] mb-5 w-fit text-myBlue text-xs rounded-xl px-7 py-3">Netbook community</div>
+                    <h1 class="text-6xl mb-4 font-bold">Your Solutions For Community!</h1>
+                    <p class="text-myGrey mb-11 text-lg">More than 2 billion people in over countries use socibook to
+                        stay
+                        in touch with friends & family.</p>
+                    <div class="btn-group pb-[165px] w-full flex justify-evenly">
+                        <button class="rounded-2xl mr-[18px] shadow-md border border-myBlue bg-blue-500 p-6 text-sm text-white">About
+                            More</button>
+                        <button class="rounded-2xl border border-myBlue p-6 text-sm text-blue-500">Invite Friend</button>
+                    </div>
+                </div>
+                <div class="flex"><img class="hidden lg:block float-right md:hidden mb-20 ml-[0.9em]" src="img/Iamge.svg" alt="" /></div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="container mx-auto flex flex-col lg:flex-row items-center">
+            <div class="sm:container lg:float-left flex flex-col ml-0 mb-8 justify-between order-2 lg:w-[406px]">
+                <p class="text-myBlue font-medium">Whats Netboks?</p>
+                <h1 class="text-bold lg:text-4xl text-2xl w-2/3 text-center lg:text-left font-black">Why Join to Netbook Social Network?</h1>
+                <p class="text-myGrey text-base">Recent surveys have indicated that small businesses recognise the need
+                    they have to connect with
+                    consumer.</p>
+                <ul>
+                    <li class="flex items-center"><span
+                            class="w-2 h-2 mr-3 rounded-full bg-myBlue outline outline-18 outline-myBlue/10"></span>Groups
+                    </li>
+                    <li class="flex items-center"><span
+                            class="w-2 h-2 mr-3 rounded-full bg-myBlue outline outline-18 outline-myBlue/10"></span>Message
+                    </li>
+                    <li class="flex items-center"><span
+                            class="w-2 h-2 mr-3 rounded-full bg-myBlue outline outline-18 outline-myBlue/10"></span>Share
+                    </li>
+
+                </ul>
+            </div>
+            <img class="order-1 lg:order-2 w-[270px] h-[368px] lg:ml-48 mb-8 rounded-xl object-cover" src="img/f36f6af9fee1b4736eb990cf98755811.jfif"
+            alt="">
+        <div class="flex order-3 flex-col lg:ml-[26px] gap-8">
+            <img class="w-[265px] h-[238px] rounded-xl object-cover"
+                src="img/472dd0dc551a660f18c2571d0377662f.jfif" alt="">
+            <img class="w-[265px]  h-[238px] rounded-xl object-cover mb-[55px]"
+                src="img/0c76f33c3664321303162a1caacb9028.jfif" alt="">
+        </div>
+            <div class="lg:float-right lg:col-span-6 flex lg:flex-wrap items-center lg:gap-7">
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between my-[75px]">
+            <div class="gap-7 flex flex-col lg:flex-row">
+                <div class="flex flex-col justify-evenly rounded-xl w-[336px] h-[340px] p-8 shadow-xl">
+                    <div class="flex flex-row"><img class="w-7 h-7 mr-3 flex" src="img/Star.svg" alt=""> 4.8 Rating
+                    </div>
+                    <div class="flex">
+                        <img class="w-6 h-6 -mr-1 object-cover rounded-full outline outline-1 outline-white shadow-xl"
+                            src="img/217425d5a3c765694826de18a87ca338.jfif" alt="">
+                        <img class="w-6 h-6 -mr-1 object-cover rounded-full outline outline-1 outline-white shadow-xl"
+                            src="img/4166eb7ec409290d768a2d61215941ef.jfif" alt="">
+                        <img class="w-6 h-6 mr-4 object-cover rounded-full outline outline-1 outline-white shadow-xl"
+                            src="img/93aba526edea090d7cfa468616cb4207.jfif" alt="">
+                        <p><span class="text-myBlue">+836k</span> Members</p>
+                    </div>
+                    <p class="text-myGrayish font-normal font-base">More than 2 billion we people over countries use
+                        socibooks we to stay in touch with friends.</p>
+                    <p class="text-myDarkGrey font-base font-medium">Join Our Community</p>
+                </div>
+                <div class="flex flex-col justify-evenly rounded-xl w-[336px] h-[340px] p-8 border">
+                    <div class="flex flex-row"><img class="w-7 h-7 mr-[11.75px]" src="img/Trophy.svg" alt=""> Awwwards
+                    </div>
+                    <div class="flex">
+                        <img class="w-6 h-6 rounded-full shadow-xl mr-4" src="img/git.png" alt="">
+                        <p>Best of 2021 on Github</p>
+                    </div>
+                    <p class="text-myGrayish font-normal font-base">More than 2 billion we people over countries use
+                        socibooks we to stay in touch with friends.</p>
+                    <p class="text-myDarkGrey font-base font-medium">Go To Awards</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-8 text-start justify-between rounded-xl w-[381px] h-[322px]">
+                <h5 class="text-myBlue">Our Achievement</h5>
+                <h1 class="text-4xl font-bold">We are Connecting You The Digital Life.</h1>
+                <p class="text-base">The scope the Social Media becomes crucial Is helps the business to directly engage
+                    with their needs and wants.</p>
+                <button
+                    class="bg-myBlue text-white w-48 h-[58px] rounded-xl shadow-xl after:ml-[22.5px] after:content-['\1f862']">Discover
+                    me</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-b from-[#F1F6FD]/0 from-[#F1F6FD] to-[#FFFFFF] via-[#F1F6FD] pb-[126px]">
+        <div class="container mx-auto">
+            <div class="pt-[60px] mb-16 flex flex-col justify-between items-center">
+                <p class="text-myBlue font-medium text-lg">Our Community</p>
+                <h1 class="text-4xl mb-[19px]">Community Main Feature</h1>
+                <p class="w-[421px] text-center">The wise man therefore always holds in these matters to this principle
+                    of selection.</p>
+            </div>
+            <div class="flex flex-wrap gap-11">
+                <div class="bg-myWhite flex w-[522px] p-8 rounded-xl shadow-xl">
+                    <img class="p-5 w-[66px] mr-9 h-[66px] rounded-xl shadow-2xl bg-gradient-to-br from-[#5CA1FE] to-[#217BF4]"
+                        src="img/member.svg" alt="">
+                    <div class="flex flex-col">
+                        <h1>Members, Friends</h1>
+                        <p>Members, Friends Connection ( like followers ), Private Message </p>
+                    </div>
+
+                </div>
+                <div class="bg-myWhite flex w-[522px] p-8 rounded-xl shadow-xl">
+                    <img class="p-5 w-[66px] mr-9 h-[66px] rounded-xl shadow-2xl  bg-gradient-to-br from-[#FF858A] to-[#F04148]"
+                        src="img/groups.svg" alt="">
+                    <div class="flex flex-col">
+                        <h1>Groups</h1>
+                        <p>Your users can create groups to let other users to join and talk</p>
+                    </div>
+
+                </div>
+                <div class="bg-myWhite flex w-[522px] p-8 rounded-xl shadow-xl">
+                    <img class="p-5 w-[66px] h-[66px] mr-9 rounded-xl shadow-2xl bg-gradient-to-br from-[#FFD085] to-[#FFAF2E]"
+                        src="img/forum.svg" alt="">
+                    <div class="flex flex-col">
+                        <h1>Forum</h1>
+                        <p>Forum is ready by BBPress. Your users can make topics and talk.</p>
+                    </div>
+                </div>
+                <div class="bg-myWhite flex w-[522px] p-8 rounded-xl shadow-xl">
+                    <img class="p-5 object-cover w-[66px] h-[66px] mr-9 rounded-xl shadow-2xl bg-gradient-to-br from-[#5CA1FE] to-[#217BF4]"
+                        src="img/custom.svg" alt="">
+                    <div class="flex flex-col">
+                        <h1>Custom Module</h1>
+                        <p>You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live
+                            builder.</p>
+                    </div>
+                </div>
+                <div class="bg-myWhite flex w-[522px] p-8 rounded-xl shadow-xl">
+                    <img class="aspect-square p-5 w-[66px] h-[66px] mr-9 rounded-xl shadow-2xl bg-gradient-to-br from-[#FF858A] to-[#F04148]"
+                        src="img/list.svg" alt="">
+                    <div class="flex flex-col">
+                        <h1>List Builder</h1>
+                        <p>Members, Groups list can be modified by drag & drop live builder.</p>
+                    </div>
+                </div>
+                <div class="bg-myWhite flex w-[522px] p-8 rounded-xl shadow-xl">
+                    <img class="aspect-square p-5 w-[66px] h-[66px] mr-9 rounded-xl shadow-2xl bg-gradient-to-br from-[#FFD085] to-[#FFAF2E]"
+                        src="img/list-scroll.svg" alt="">
+                    <div class="flex flex-col">
+                        <h1>List Scroll Effects</h1>
+                        <p>8 different scroll effects are ready.
+                            You can always change by your tastes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto mt-[84px]">
+            <p class="text-myBlue text-lg font-medium text-center">Valuable Team</p>
+            <h1 class="text-myBlack text-4xl font-bold text-center">Our Active Members</h1>
+            <p class="text-myGrey text-base font-normal text-center">when an unknown printer took a galley of type and
+                meeting fari scrambled it.</p>
+            <div class="lg:w-[474px] lg:h-[72px] w-fit mx-auto mb-11 mt-[38px] flex flex-col lg:flex-row justify-between rounded-xl bg-myLightBlue">
+                <div class=" w-[150px] h-[56px] flex justify-center self-center items-center">Newst</div>
+                <div class=" w-[150px] h-[56px] flex justify-center self-center items-center">Popular</div>
+                <div
+                    class="bg-myBlue color-white rounded-2xl w-[150px] h-[56px] flex justify-center self-center items-center shadow-lg">
+                    Active</div>
+            </div>
+            <div class="gap-11 flex flex-col lg:flex-row items-center justify-evenly pb-[130px]">
+                <div class="text-center">
+                    <div
+                        class="bg-[url('img/94db93607714ea5cb060d94fa01fc55e.png')] bg-cover -z-10 bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
+                        before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue after:text-myWhite after:content-['L'] after:font-cursive after:font-extrabold  after:rotate-[45deg] after:-scale-x-100  after:rounded-full after:absolute after:left-14 after:top-[136px]">
+                    </div>
+                    <h3 class="mt-[46px]">Fahim Rahman</h3>
+                    <span>@rahman</span>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-[url('img/e26a9f2b154eed029a07f7736b5c4be9.png')] -z-10 bg-cover bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
+                        before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue
+                         after:text-myWhite after:content-['L'] after:font-cursive after:font-extrabold  after:rotate-[45deg] after:-scale-x-100  after:rounded-full after:absolute after:left-14 after:top-[136px]">
+                    </div>
+                    <h3 class="mt-[46px]">Kazi Rahman</h3>
+                    <span>@Rahman</span>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-[url('img/775590981b6c5750f59d46961a681b65.png')] -z-10 bg-cover bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
+                        before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue
+                         after:text-myWhite after:content-['L'] after:font-cursive after:font-extrabold  after:rotate-[45deg] after:-scale-x-100  after:rounded-full after:absolute after:left-14 after:top-[136px]">
+                    </div>
+                    <h3 class="mt-[46px]">Masterero Ali</h3>
+                    <span>@Master</span>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-[url('img/0412cbda2a74995ca3d0da0be4340524.png')] -z-10 bg-cover bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
+                        before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue
+                         after:text-myWhite after:content-['L'] after:font-cursive after:font-extrabold  after:rotate-[45deg] after:-scale-x-100  after:rounded-full after:absolute after:left-16 after:top-[136px]">
+                    </div>
+                    <h3 class="mt-[46px]">Alia Karon</h3>
+                    <span>@Alia</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="bg-[#E5F0FD]">
+        <div class="container mx-auto flex flex-col lg:flex-row z-0 justify-between">
+            <div class="bg-transparent">
+                <p class="mt-[34px] text-myBlue">Get Our Aplication</p>
+                <h1 class="text-myBlack font-bold text-4xl">You Can Easily Find
+                    This App…!</h1>
+                <p class="text-myGrey text-base ">I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh
+                    loo
+                    brilliant.</p>
+            </div>
+            <img class="lg:w-[440px] object-cover z-50 overflow-visible" src="img/mobile muckup.png" alt="">
+        </div>
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        /* or 144% */
+        
+        
+        color: #0A093D;
+        
+    </section>
+    <section>
+        <div class="container mx-auto mb-[131px]">
+            <div class="flex flex-col justify-center">
+                <p class="mt-[34px] text-myBlue text-center">Get Our Aplication</p>
+                <h1 class="mb-[74px] text-center font-bold text-myBlack text-4xl">Latest News</h1>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="before:bg-[url('img/Union.svg')] relative before:w-[137px] before:h-[152px] before:absolute before:-top-[8%] before:-left-[17%]">
+                    <div class="w-[347px] h-[363px] flex overflow-hidden rounded-2xl"><img class="self-center aspect-auto object-cover" src="img/d00262ab4e44102654a6cd24648362b8.jfif" alt=""></div>
+                    <p>It Does Not Matter Hows Slowly go as Long</p>
+                    <p class="text-myGrey text-center leading-4 font-base font-normal">Continue Reading</p>
+                </div>
+                <div>
+                    <div class="w-[347px] h-[363px] flex overflow-hidden rounded-2xl"><img class="w-full self-center aspect-auto object-cover" src="img/b74041b0ae13bb53f08d589431317f80.jfif" alt=""></div>
+                    <p>Netbook Network Added New Photo Filter</p>
+                    <p class="text-myGrey text-center leading-4 font-base font-normal">Continue Reading</p>
+                </div>
+                <div>
+                    <div class="w-[347px] h-[363px] flex overflow-hidden rounded-2xl"><img class="h-full self-center aspect-auto object-cover" src="img/cf1e50be9943151f5d7cc6e92dcc2938.jfif" alt=""></div>
+                    <p>We Optimised Netbooks Better Navigation</p>
+                    <p class="text-myGrey text-center leading-4 font-base font-normal">Continue Reading</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-myGrayishBlue text-myWhite">
+        <div class="container mx-auto">
+            <div class="nav-footer flex flex-col lg:flex-row justify-between pt-[78px]">
+                <div>
+                    <h6>Home</h6>
+                    <ul>
+                        <li>Home</li>
+                        <li>Community</li>
+                        <li>Events</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Resources</h6>
+                    <ul>
+                        <li>Blog</li>
+                        <li>News</li>
+                        <li>Guides</li>
+                        <li>Help Center
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Community</h6>
+                    <ul>
+                        <li>NewsFeed</li>
+                        <li>Profile</li>
+                        <li>Friends</li>
+                        <li>Forums</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Main links</h6>
+                    <ul>
+                        <li>Members</li>
+                        <li>Activity</li>
+                        <li>Groups</li>
+                        <li>Private Group</li>
+                    </ul>
+                </div>
+                <div class="w-[339px]">
+                    <h6>Subscribe Cirkle Newsletter</h6>
+                    <p class="mb-8">Subscribe to be the first one to know about updates. Enter your email</p>
+                    <form class="flex items-center relative" action="">
+                        <input class="w-[339px] h-12 border-2 pl-6 bg-transparent items-center justify-start rounded-xl border-[rgba(255, 255, 255, 0.85)]" placeholder="Email Address">
+                        <button class="bg-myWhite absolute right-0 text-base px-6 rounded-xl m py-3 text-myBlack ">Subscribe</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="footBar" class="bg-myDarkestShade">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1>Besnik Creative Agency.</h1>
+            <div class="logo flex items-center">
+                <img src="img/Logo.svg" alt="" />
+                <h1 class="text-myGrayishBlue font-poppins ml-1.5 text-2xl font-semibold not-italic leading-6">
+                    Netbook
+                </h1>
+            </div>
+            <div class="flex w-[168px]">
+                <p>Social Media</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" viewBox="0 0 512 512" style="fill: blue;">
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" style="fill: red;" viewBox="0 0 448 512">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" style="fill: deepskyblue;"
+                    viewBox="0 0 496 512">
+                    <path
+                        d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" style="fill: maroon;" viewBox="0 0 496 512">
+                    <path
+                        d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

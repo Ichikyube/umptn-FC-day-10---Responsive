@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: inter;
+  }
+}
+.nav-footer ul li{
+  @apply leading-[46px];
+}
+.nav-footer h6 {
+  @apply mb-[22px] font-medium text-xl;
+}
