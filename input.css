@@ -11,5 +11,8 @@
   @apply leading-[46px];
 }
 .nav-footer h6 {
-  @apply mb-[22px] font-medium text-xl;
+  @apply mb-[22px] font-medium text-3xl lg:text-xl;
+}
+.icon img {
+  @apply mr-2;
 }
