@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -14,28 +14,38 @@
     <script src="node_modules/flowbite/dist/flowbite.js"></script>
 </head>
 
-<body class="relative">
-    <div class="absolute -z-10 top-0 w-full h-screen from-mygradWhite to-mygradGrey bg-gradient-to-br"></div>
-    <nav id="navbar-default" class="sticky top-0 ">
-        <div class="container top-3 left-64 mx-auto w-full flex items-center justify-between pt-2 lg:pt-7 pb-4 px-0">
+<body>
+
+    <nav id="navbar" class="fixed w-full bg-transparent top-0 z-50">
+        <div class="container top-3 left-64 mx-auto w-full flex items-center justify-between pt-2 pb-0 px-auto">
             <div class="logo flex items-center">
                 <img src="img/Logo.svg" alt="" />
                 <h1 class="text-myGrayishBlue font-poppins ml-1.5 text-2xl font-semibold not-italic leading-6">
                     Netbook
                 </h1>
             </div>
-            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex absolute z-50 right-0 p-2 mr-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex absolute z-50 right-0 p-2 mr-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
             </button>
-            <div class="hidden lg:flex fixed lg:static from-mygradWhite to-mygradGrey lg:bg-none bg-gradient-to-bl lg:bg-transparent top-11 lg:ml-[72px] w-full justify-between" id="navbar-dropdown">
+            <div class="hidden lg:flex fixed lg:static from-mygradWhite to-mygradGrey lg:bg-none bg-gradient-to-bl lg:bg-transparent top-11 lg:ml-[72px] w-full justify-between"
+                id="navbar-dropdown">
                 <div class="bg-fixed w-full top-0 mx-auto flex items-center justify-between px-0">
-                    <ul class="font-inter flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 gap-8">
-                        <li><a class="font-bold" href="">Home</a></li>
-                        <li class="after:ml-1 after:text-base lg:after:text-xs after:text-blue-500 after:content-['\2039'] focus:after:content-['\203A']  lg:after:content-['\2228']"><a
-                                href="">Community</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Events</a></li>
+                    <ul
+                        class="font-inter flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 gap-8">
+                        <li><a class="font-bold" href="#top">Home</a></li>
+                        <li
+                            class="after:ml-1 after:text-base lg:after:text-xs after:text-blue-500 after:content-['\2039'] focus:after:content-['\203A']  lg:after:content-['\2228']">
+                            <a href="#feature">Community</a></li>
+                        <li><a class="transition-all duration-1000" href="#blogs">Blog</a></li>
+                        <li><a class="transition-all" href="#footer">Events</a></li>
                     </ul>
                 </div>
                 <div class="menu-action flex flex-col lg:flex-row justify-center items-center">
@@ -44,39 +54,47 @@
                         <span class="absolute inset-y-0 left-0 flex items-center">
                             <img src="img/MagnifyingGlass.svg" alt="">
                         </span>
-                        <input class="lg:w-[105px] w-full lg:focus:w-fit transition-all duration-700 placeholder:text-inter-400 lg:text-xs block bg-transparent border-separate border-t-0 border-x-0 border-b-2 border-myPaleOrange py-2 pl-4 items-center overflow-x-visible focus:outline-none focus:border-t-0 focus:border-x-0 focus:border-b-2 focus:ring-sky-500 focus:ring-0 sm:text-sm" placeholder="Search Here..." type="text" name="search"/>
+                        <input
+                            class="lg:w-[105px] w-full lg:focus:w-fit transition-all duration-700 placeholder:text-inter-400 lg:text-xs block bg-transparent border-separate border-t-0 border-x-0 border-b-2 border-myPaleOrange py-3 pl-4 items-center overflow-x-visible focus:outline-none focus:border-t-0 focus:border-x-0 focus:border-b-2 focus:ring-sky-500 focus:ring-0 sm:text-sm"
+                            placeholder="Search Here..." type="text" name="search" />
                     </label>
-                    <button class="rounded-xl lg:ml-[42px] w-1/2 justify-center bg-blue-500 text-myWhite text-xs my-5 flex min-w-fit px-11 py-4">Log In</button>
+                    <button
+                        class="rounded-xl lg:ml-[42px] w-1/2 justify-center bg-blue-500 text-myWhite text-xs my-[18px] flex min-w-fit px-11 py-3">Log
+                        In</button>
                 </div>
             </div>
         </div>
         <hr>
     </nav>
 
-    <section id="hero">
+    <section id="hero" class="-z-10 w-full from-mygradWhite to-mygradGrey bg-gradient-to-br">
         <div
-            class="md:block lg:mt-14 flex font-inter font-italic font-xl container mx-auto gap-5 lg:grid lg:grid-cols-2 items-center text-2xl font-semibold leading-6 mb-[124px]">
-            <div class="font-myBlue float-left mt-12 flex-col text-left">
+            class="md:block lg:pt-24 flex font-inter font-italic font-xl container mx-auto gap-5 lg:grid lg:grid-cols-2 items-center text-2xl font-semibold leading-6 mb-[124px]">
+            <div class="font-myBlue w-[512px] float-left mt-[42px] flex-col text-left">
                 <div class="bg-myBlue/[.1] mb-5 w-fit text-myBlue text-xs rounded-xl px-7 py-3">Netbook community</div>
-                <h1 class="text-6xl mb-4 font-bold">Your Solutions For Community!</h1>
+                <h1 class="[font-size:56px] leading-[66px] mb-4 font-bold">Your Solutions For Community!</h1>
                 <p class="text-myGrey mb-11 text-lg">More than 2 billion people in over countries use socibook to
                     stay
                     in touch with friends & family.</p>
                 <div class="btn-group pb-[165px] w-full flex justify-evenly">
-                    <button class="rounded-2xl mr-[18px] shadow-md border border-myBlue bg-blue-500 p-6 text-sm text-white">About
+                    <button
+                        class="rounded-2xl mr-[18px] shadow-md border border-myBlue bg-blue-500 p-6 text-sm text-white">About
                         More</button>
                     <button class="rounded-2xl border border-myBlue p-6 text-sm text-blue-500">Invite Friend</button>
                 </div>
             </div>
-            <div class="flex"><img class="hidden lg:block float-right md:hidden mb-20 ml-[0.9em]" src="img/Iamge.svg" alt="" /></div>
+            <div class="flex"><img class="hidden lg:block float-right md:hidden mb-20 ml-[0.9em]" src="img/Iamge.svg"
+                    alt="" /></div>
         </div>
     </section>
-    <section>
+    <section id="what">
         <div class="container mx-auto flex flex-col lg:flex-row items-center">
             <div class="sm:container lg:float-left flex flex-col ml-0 mb-8 justify-between order-2 lg:w-[406px]">
                 <p class="text-myBlue font-medium">Whats Netboks?</p>
-                <h1 class="text-bold lg:text-4xl mb-4 text-2xl lg:w-2/3 text-center lg:text-left font-black">Why Join to Netbook Social Network?</h1>
-                <p class="text-myGrey mb-9 text-center text-base">Recent surveys have indicated that small businesses recognise the need
+                <h1 class="text-bold lg:text-4xl mb-4 text-2xl lg:w-2/3 text-center lg:text-left font-black">Why Join to
+                    Netbook Social Network?</h1>
+                <p class="text-myGrey mb-9 text-center text-base">Recent surveys have indicated that small businesses
+                    recognise the need
                     they have to connect with consumer.</p>
                 <ul class="mx-auto">
                     <li class="flex items-center"><span
@@ -91,20 +109,20 @@
 
                 </ul>
             </div>
-            <img class="order-1 lg:order-2 w-[270px] h-[368px] lg:ml-48 mb-8 rounded-xl object-cover" src="img/f36f6af9fee1b4736eb990cf98755811.jfif"
-            alt="">
-        <div class="flex order-3 flex-col lg:ml-[26px] gap-8">
-            <img class="w-[265px] h-[238px] rounded-xl object-cover"
-                src="img/472dd0dc551a660f18c2571d0377662f.jfif" alt="">
-            <img class="w-[265px]  h-[238px] rounded-xl object-cover mb-[55px]"
-                src="img/0c76f33c3664321303162a1caacb9028.jfif" alt="">
-        </div>
+            <img class="order-1 lg:order-2 w-[270px] h-[368px] lg:ml-48 mb-8 rounded-xl object-cover"
+                src="img/f36f6af9fee1b4736eb990cf98755811.jfif" alt="">
+            <div class="flex order-3 flex-col lg:ml-[26px] gap-8">
+                <img class="w-[265px] h-[238px] rounded-xl object-cover" src="img/472dd0dc551a660f18c2571d0377662f.jfif"
+                    alt="">
+                <img class="w-[265px]  h-[238px] rounded-xl object-cover mb-[55px]"
+                    src="img/0c76f33c3664321303162a1caacb9028.jfif" alt="">
+            </div>
             <div class="lg:float-right lg:col-span-6 flex lg:flex-wrap items-center lg:gap-7">
 
             </div>
         </div>
     </section>
-    <section>
+    <section id="why">
         <div class="container mx-auto flex flex-col lg:flex-row justify-between my-[75px]">
             <div class="gap-7 flex flex-col lg:flex-row">
                 <div class="flex flex-col justify-evenly rounded-xl w-[336px] h-[340px] p-8 shadow-xl">
@@ -146,12 +164,14 @@
             </div>
         </div>
     </section>
-    <section id="feature" class="bg-gradient-to-b from-[#F1F6FD]/0 from-[#F1F6FD] to-[#FFFFFF] via-[#F1F6FD] pb-[126px]">
+    <section id="feature"
+        class="bg-gradient-to-b from-[#F1F6FD]/0 from-[#F1F6FD] to-[#FFFFFF] via-[#F1F6FD] pb-[126px]">
         <div class="container mx-auto">
             <div class="pt-[60px] mb-16 flex flex-col justify-between items-center">
                 <p class="text-myBlue font-medium text-lg">Our Community</p>
                 <h1 class="text-4xl text-center mb-[19px]">Community Main Feature</h1>
-                <p class="lg:w-[421px] text-center">The wise man therefore always holds in these matters to this principle
+                <p class="lg:w-[421px] text-center">The wise man therefore always holds in these matters to this
+                    principle
                     of selection.</p>
             </div>
             <div class="flex flex-wrap gap-11">
@@ -210,13 +230,14 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="teams">
         <div class="container mx-auto mt-[84px]">
             <p class="text-myBlue text-lg font-medium text-center">Valuable Team</p>
             <h1 class="text-myBlack text-4xl font-bold text-center">Our Active Members</h1>
             <p class="text-myGrey text-base font-normal text-center">when an unknown printer took a galley of type and
                 meeting fari scrambled it.</p>
-            <div class="lg:w-[474px] lg:h-[72px] w-fit mx-auto mb-11 mt-[38px] flex flex-col lg:flex-row justify-between rounded-xl bg-myLightBlue">
+            <div
+                class="lg:w-[474px] lg:h-[72px] w-fit mx-auto mb-11 mt-[38px] flex flex-col lg:flex-row justify-between rounded-xl bg-myLightBlue">
                 <div class=" w-[150px] h-[56px] flex justify-center self-center items-center">Newst</div>
                 <div class=" w-[150px] h-[56px] flex justify-center self-center items-center">Popular</div>
                 <div
@@ -260,52 +281,61 @@
                     <span>@Alia</span>
                 </div>
             </div>
-
-
         </div>
     </section>
-    <section class="lg:bg-[#E5F0FD]  from-[#E5F0FD] to-mygradWhite bg-gradient-to-b -z-10 overflow-hidden lg:h-[560px]">
+    <section id="download"
+        class=" from-[#E5F0FD] to-mygradWhite bg-gradient-to-b lg:bg-none lg:bg-[#E5F0FD] -z-10 overflow-hidden lg:h-[560px]">
         <div class="container mx-auto flex flex-col lg:flex-row justify-between">
             <div class="bg-transparent pt-[122px] h-fit w-[351px]">
                 <p class="mt-[34px] text-myBlue">Get Our Aplication</p>
                 <h1 class="text-myBlack font-bold text-4xl">You Can Easily Find
                     This App…!</h1>
-                <p class="text-myGrey text-base">I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh
+                <p class="text-myGrey text-base">I say chap that’s suing lavatory chip shop gosh off his smashing boot
+                    are you taking the piss posh
                     loo
                     brilliant.</p>
             </div>
-            <div class="w-[440px] h-[734.95px] lg:pr-[84px] bg-[url('img/mobilemuckup.svg')] bg-cover bg-center mx-auto lg:scale-150 lg:mt-24 ">
-        </div>
+            <div
+                class="w-[440px] h-[734.95px] lg:pr-[84px] bg-[url('img/mobilemuckup.svg')] pr-6 bg-cover bg-right lg:bg-center mx-auto lg:scale-150 lg:mt-24 ">
+            </div>
     </section>
-    <section>
-        <div class="container mx-auto mb-[131px]">
+    <section id="blogs">
+        <div class="container -z-50 mx-auto mt-[130px] mb-[131px]">
             <div class="flex flex-col justify-center">
-                <p class="mt-[34px] text-myBlue text-center">Get Our Aplication</p>
+                <p class="text-myBlue text-center">Get Our Aplication</p>
                 <h1 class="mb-[74px] text-center font-bold text-myBlack text-4xl">Latest News</h1>
             </div>
-            
             <div class="flex flex-col lg:flex-row justify-between">
-                <div class="before:bg-[url('img/Union.svg')] relative before:w-[137px] before:h-[152px] before:absolute before:-top-[8%] before:-left-[17%]">
-                    <div class="w-[347px] h-[363px] mb-6 leading-8 flex overflow-hidden rounded-2xl"><img class="self-center aspect-auto object-cover" src="img/d00262ab4e44102654a6cd24648362b8.jfif" alt=""></div>
-                    <p>It Does Not Matter Hows Slowly go as Long</p>
-                    <p class="text-myGrey text-center leading-4 font-base font-normal my-6">Continue Reading</p>
+                <div
+                    class="relative before:bg-[url('img/Union.svg')] mb-8 before:w-[137px] transition-all duration-300 before:h-[152px] before:absolute before:-top-[8%] lg:before:-left-[17%] before:left-[30%]">
+                    <div class="w-[347px] h-[363px] mb-6 leading-8 flex overflow-hidden rounded-2xl"><img
+                            class="self-center aspect-auto object-cover" src="img/d00262ab4e44102654a6cd24648362b8.jfif"
+                            alt=""></div>
+                    <p class="text-lg lg:text-base">It Does Not Matter Hows Slowly go as Long</p>
+                    <a href="#" class="text-myGrey text-center leading-4 font-base font-normal my-6">Continue Reading</a>
                 </div>
-                <div>
-                    <div class="w-[347px] h-[363px] mb-6 leading-8 flex overflow-hidden rounded-2xl"><img class="self-center aspect-auto object-cover" src="img/b74041b0ae13bb53f08d589431317f80.jfif" alt=""></div>
+                <div class="mb-8">
+                    <div class="w-[347px] h-[363px] mb-6 leading-8 flex overflow-hidden rounded-2xl"><img
+                            class="self-center aspect-auto object-cover" src="img/b74041b0ae13bb53f08d589431317f80.jfif"
+                            alt=""></div>
                     <p>Netbook Network Added New Photo Filter</p>
-                    <p class="text-myGrey text-center leading-4 font-base font-normal my-6">Continue Reading</p>
+                    <a href="#" class="text-myGrey text-center leading-4 font-base font-normal my-6">Continue Reading</a>
                 </div>
-                <div>
-                    <div class="w-[347px] h-[363px] mb-6 leading-8 flex overflow-hidden rounded-2xl"><img class="h-full self-center aspect-auto object-cover" src="img/cf1e50be9943151f5d7cc6e92dcc2938.jfif" alt=""></div>
+                <div
+                    class="before:bg-[url('img/Union.svg')] relative before:w-[137px] transition-all duration-300 before:h-[152px] before:absolute lg:before:top-[25%] before:-z-20 lg:before:-right-[28%] before:top-[55%] before:right-[30%]">
+                    <div class="w-[347px] h-[363px] mb-6 leading-8 flex overflow-hidden rounded-2xl"><img
+                            class="h-full self-center aspect-auto object-cover"
+                            src="img/cf1e50be9943151f5d7cc6e92dcc2938.jfif" alt=""></div>
                     <p>We Optimised Netbooks Better Navigation</p>
-                    <p class="text-myGrey text-center leading-4 font-base font-normal my-6">Continue Reading</p>
+                    <a href="#" class="text-myGrey text-center leading-4 font-base font-normal my-6">Continue Reading</a>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="bg-myGrayishBlue text-myWhite">
+    <footer id="footer" class="bg-myGrayishBlue text-myWhite">
         <div class="container mx-auto">
-            <div class="nav-footer flex flex-wrap gap-12 text-center lg:text-left lg:flex-row lg:justify-between pt-[78px]">
+            <div
+                class="nav-footer flex flex-wrap gap-12 text-center lg:text-left lg:flex-row justify-between pt-[78px]">
                 <div>
                     <h6>Home</h6>
                     <ul>
@@ -346,36 +376,55 @@
                 <div class="w-[339px]">
                     <h6>Subscribe Cirkle Newsletter</h6>
                     <p class="mb-8">Subscribe to be the first one to know about updates. Enter your email</p>
-                    <form class="flex items-center relative" action="">
-                        <input class="w-[339px] h-12 border-2 pl-6 bg-transparent items-center justify-start rounded-xl border-[rgba(255, 255, 255, 0.85)]" placeholder="Email Address">
-                        <button class="bg-myWhite absolute right-0 text-base px-6 rounded-xl m py-3 text-myBlack ">Subscribe</button>
+                    <form class="flex items-center mb-4 relative" action="">
+                        <input
+                            class="w-[339px] h-12 border-2 pl-6 bg-transparent items-center justify-start rounded-xl border-[rgba(255, 255, 255, 0.85)]"
+                            placeholder="Email Address">
+                        <button
+                            class="bg-myWhite absolute right-0 text-base px-6 rounded-xl m py-3 text-myBlack ">Subscribe</button>
                     </form>
-                    
+
                 </div>
             </div>
         </div>
     </footer>
     <section id="footBar" class="bg-myDarkestShade">
-        <div class="container mx-auto w-full flex lg:flex flex-wrap lg:flex-nowrap text-myWhite justify-between items-center">
+        <div class="container flex flex-wrap lg:flex-nowrap text-myWhite justify-between items-center">
             <h1 class="text-sm">Besnik Creative Agency.</h1>
-            <div class="logo flex items-center">
+            <div class="logo flex my-[30px] items-center">
                 <img src="img/Logo.svg" alt="" />
                 <h1 class="text-myLightBlue font-poppins ml-1.5 text-2xl font-semibold not-italic leading-6">
                     Netbook
                 </h1>
             </div>
-            <div class="flex flex-col lg:flex-row mx-auto mb-4">
-                <p>Social Media</p>
-                <div class="w-[168px] icon flex">
+            <div class="mx-auto lg:mx-0 flex flex-col lg:flex-row items-center lg:mb-0 mb-4">
+                <div class="w-[168px] sm:mb-4 lg:mb-0 icon flex">
                     <img src="img/Twitter.svg" alt="">
                     <img src="img/instagram.svg" alt="">
                     <img src="img/facebook.svg" alt="">
                     <img src="img/Linkedin.svg" alt="">
                 </div>
-                
             </div>
         </div>
     </section>
+    <script>
+        // OnScroll event handler
+        const onScroll = () => {
+
+            // Get scroll value
+            const scroll = document.documentElement.scrollTop
+
+            // If scroll value is more than 0 - add class
+            if (scroll > 0) {
+                navbar.classList.add("backdrop-blur-md");
+            } else {
+                navbar.classList.remove("backdrop-blur-md")
+            }
+        }
+
+        // Use the function
+        window.addEventListener('scroll', onScroll)
+    </script>
 </body>
 
 </html>
