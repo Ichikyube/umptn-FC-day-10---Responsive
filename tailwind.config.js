@@ -44,6 +44,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwind-scrollbar-hide'),
     require('flowbite/plugin'),
     plugin(function({ addBase, theme }) {
       addBase({

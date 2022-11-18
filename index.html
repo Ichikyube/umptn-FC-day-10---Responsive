@@ -72,15 +72,15 @@
             class="md:block lg:pt-24 flex font-inter font-italic font-xl container mx-auto gap-5 lg:grid lg:grid-cols-2 items-center text-2xl font-semibold leading-6 mb-[124px]">
             <div class="font-myBlue w-[512px] float-left mt-[42px] flex-col text-left">
                 <div class="bg-myBlue/[.1] mb-5 w-fit text-myBlue text-xs rounded-xl px-7 py-3">Netbook community</div>
-                <h1 class="[font-size:56px] leading-[66px] mb-4 font-bold">Your Solutions For Community!</h1>
+                <h1 class="animate-pulse [font-size:56px] leading-[66px] mb-4 font-bold">Your Solutions For Community!</h1>
                 <p class="text-myGrey mb-11 text-lg">More than 2 billion people in over countries use socibook to
                     stay
                     in touch with friends & family.</p>
                 <div class="btn-group pb-[165px] w-full flex justify-evenly">
                     <button
-                        class="rounded-2xl mr-[18px] shadow-md border border-myBlue bg-blue-500 p-6 text-sm text-white">About
+                        class="rounded-2xl mr-[18px] shadow-md border border-myBlue bg-blue-500 hover:bg-blue-900 transition duration-300 p-6 text-sm text-white">About
                         More</button>
-                    <button class="rounded-2xl border border-myBlue p-6 text-sm text-blue-500">Invite Friend</button>
+                    <button class="rounded-2xl border border-myBlue p-6 text-sm hover:bg-purple-800 transition duration-300 hover:text-amber-500 text-blue-500">Invite Friend</button>
                 </div>
             </div>
             <div class="flex"><img class="hidden lg:block float-right md:hidden mb-20 ml-[0.9em]" src="img/Iamge.svg"
@@ -153,7 +153,7 @@
                     <p class="text-myDarkGrey font-base font-medium">Go To Awards</p>
                 </div>
             </div>
-            <div class="flex flex-col pt-8 text-start justify-between rounded-xl w-[381px] h-[322px]">
+            <div class="flex flex-col pt-8 text-start justify-between rounded-xl lg:w-[381px] lg:h-[322px]">
                 <h5 class="text-myBlue">Our Achievement</h5>
                 <h1 class="text-4xl font-bold">We are Connecting You The Digital Life.</h1>
                 <p class="text-base">The scope the Social Media becomes crucial Is helps the business to directly engage
@@ -230,7 +230,7 @@
             </div>
         </div>
     </section>
-    <section id="teams">
+    <section id="teams"> 
         <div class="container mx-auto mt-[84px]">
             <p class="text-myBlue text-lg font-medium text-center">Valuable Team</p>
             <h1 class="text-myBlack text-4xl font-bold text-center">Our Active Members</h1>
@@ -241,11 +241,11 @@
                 <div class=" w-[150px] h-[56px] flex justify-center self-center items-center">Newst</div>
                 <div class=" w-[150px] h-[56px] flex justify-center self-center items-center">Popular</div>
                 <div
-                    class="bg-myBlue color-white rounded-2xl w-[150px] h-[56px] flex justify-center self-center items-center shadow-lg">
+                    class="bg-myBlue hover:motion-safe:animate-spin color-white rounded-2xl w-[150px] h-[56px] flex justify-center self-center items-center shadow-lg">
                     Active</div>
             </div>
-            <div class="gap-11 flex flex-col lg:flex-row items-center justify-evenly pb-[130px]">
-                <div class="text-center">
+            <div class="gap-11 flex sm:select-none select-auto overflow-auto scrollbar-hide sm:focus:touch-pan-x sm:touch-auto cursor-grab pt-6 items-center justify-evenly pb-[130px]">
+                <div class="member text-center" onmouseover="this.firstElementChild.classList.add('before:animate-spin')" onmouseout="this.firstElementChild.classList.remove('before:animate-spin')">
                     <div
                         class="bg-[url('img/94db93607714ea5cb060d94fa01fc55e.png')] bg-cover -z-10 bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
                         before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue after:text-myWhite after:content-['L'] after:font-cursive after:font-extrabold  after:rotate-[45deg] after:-scale-x-100  after:rounded-full after:absolute after:left-14 after:top-[136px]">
@@ -253,7 +253,7 @@
                     <h3 class="mt-[46px]">Fahim Rahman</h3>
                     <span>@rahman</span>
                 </div>
-                <div class="text-center">
+                <div class="text-center" onmouseover="this.firstElementChild.classList.add('before:animate-spin')" onmouseout="this.firstElementChild.classList.remove('before:animate-spin')">
                     <div
                         class="bg-[url('img/e26a9f2b154eed029a07f7736b5c4be9.png')] -z-10 bg-cover bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
                         before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue
@@ -262,7 +262,7 @@
                     <h3 class="mt-[46px]">Kazi Rahman</h3>
                     <span>@Rahman</span>
                 </div>
-                <div class="text-center">
+                <div class="text-center" onmouseover="this.firstElementChild.classList.add('before:animate-spin')" onmouseout="this.firstElementChild.classList.remove('before:animate-spin')">
                     <div
                         class="bg-[url('img/775590981b6c5750f59d46961a681b65.png')] -z-10 bg-cover bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
                         before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue
@@ -271,7 +271,7 @@
                     <h3 class="mt-[46px]">Masterero Ali</h3>
                     <span>@Master</span>
                 </div>
-                <div class="text-center">
+                <div class="text-center" onmouseover="this.firstElementChild.classList.add('before:animate-spin')" onmouseout="this.firstElementChild.classList.remove('before:animate-spin')">
                     <div
                         class="bg-[url('img/0412cbda2a74995ca3d0da0be4340524.png')] -z-10 bg-cover bg-myLightBlue w-[142px] h-[142px] bg-top rounded-full relative before:bg-no-repeat 
                         before:bg-cover before:absolute before:w-[inherit] before:h-[inherit] before:left-0 before:scale-125 before:bg-[url('img/ellipse.svg')] after:w-6 after:h-6 after:bg-myBlue
@@ -296,7 +296,7 @@
                     brilliant.</p>
             </div>
             <div
-                class="w-[440px] h-[734.95px] lg:pr-[84px] bg-[url('img/mobilemuckup.svg')] pr-6 bg-cover bg-right lg:bg-center mx-auto lg:scale-150 lg:mt-24 ">
+                class="w-[440px] h-[734.95px] lg:pr-[84px] bg-[url('img/mobilemuckup.svg')] animate-bounce pr-6 bg-cover bg-right lg:bg-center mx-auto lg:scale-150 lg:mt-24 ">
             </div>
     </section>
     <section id="blogs">
@@ -421,7 +421,6 @@
                 navbar.classList.remove("backdrop-blur-md")
             }
         }
-
         // Use the function
         window.addEventListener('scroll', onScroll)
     </script>
