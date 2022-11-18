@@ -1642,23 +1642,6 @@ html {
           animation: bounce 1s infinite;
 }
 
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
 .cursor-grab {
   cursor: -webkit-grab;
   cursor: grab;
@@ -2014,6 +1997,12 @@ html {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-blue-500 {
+  --tw-gradient-from: #3F83F8;
+  --tw-gradient-to: rgb(63 131 248 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-\[\#F1F6FD\] {
   --tw-gradient-to: rgb(241 246 253 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #F1F6FD, var(--tw-gradient-to);
@@ -2041,6 +2030,10 @@ html {
 
 .to-mygradWhite {
   --tw-gradient-to: #FFFFFF;
+}
+
+.to-transparent {
+  --tw-gradient-to: transparent;
 }
 
 .bg-cover {
@@ -2342,11 +2335,6 @@ html {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
-}
-
-.text-amber-500 {
-  --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -3439,6 +3427,13 @@ section {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@-webkit-keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes spin {
   to {
     content: var(--tw-content);
@@ -3573,15 +3568,34 @@ section {
   content: var(--tw-content);
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@-webkit-keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 
-.hover\:animate-spin:hover {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.hover\:animate-ping:hover {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .hover\:border-gray-300:hover {
@@ -3594,6 +3608,16 @@ section {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 56 118 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-myBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 123 244 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
@@ -3604,29 +3628,18 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-900:hover {
+.hover\:bg-myVeryDarkBlue:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(35 56 118 / var(--tw-bg-opacity));
+  background-color: hsl(220 13% 13% / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(63 131 248 / var(--tw-bg-opacity));
+.hover\:bg-gradient-to-r:hover {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.hover\:bg-blue-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(225 239 254 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-purple-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 235 254 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-purple-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(85 33 181 / var(--tw-bg-opacity));
+.hover\:text-myOrange:hover {
+  --tw-text-opacity: 1;
+  color: hsl(26 100% 55% / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-900:hover {
@@ -3642,50 +3655,6 @@ section {
 .hover\:text-gray-600:hover {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-amber-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
-}
-
-@keyframes spin {
-  to {
-    content: var(--tw-content);
-    transform: rotate(360deg);
-  }
-}
-
-.hover\:before\:animate-spin:hover::before {
-  content: var(--tw-content);
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    content: var(--tw-content);
-    transform: rotate(360deg);
-  }
-}
-
-.before\:hover\:animate-spin:hover::before {
-  content: var(--tw-content);
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    content: var(--tw-content);
-    transform: rotate(360deg);
-  }
-}
-
-.hover\:first\:before\:animate-spin:first-child:hover::before {
-  content: var(--tw-content);
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
 }
 
 .focus\:border-x-0:focus {
@@ -3756,36 +3725,7 @@ section {
     }
   }
 
-  .motion-safe\:animate-spin {
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
   .hover\:motion-safe\:animate-spin:hover {
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  @-webkit-keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .motion-reduce\:animate-spin {
     -webkit-animation: spin 1s linear infinite;
             animation: spin 1s linear infinite;
   }
@@ -3928,10 +3868,6 @@ section {
 
   .sm\:mb-4 {
     margin-bottom: 1rem;
-  }
-
-  .sm\:cursor-e-resize {
-    cursor: e-resize;
   }
 
   .sm\:touch-auto {
